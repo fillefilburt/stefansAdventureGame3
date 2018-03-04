@@ -29,7 +29,9 @@ while age < 8 or age > 12:
     elif age < 8:
         print('C\'mon, Stig isn\'t that little.')
     else:
-        print('Yeah, that sounds about right. But who knows? Stig is a kid and no one really knows how old he is, least of all himself.')
+        print('Yeah, that sounds about right. But who knows? '
+              'Stig is a little orphaned kid. No one really knows how old he is, least of all himself. '
+              'And no one cares.')
 time.sleep(2)
 
 gender = ''
@@ -45,19 +47,3 @@ while gender != 'boy':
         print('You sure are! Because you have a penis!')
 time.sleep(1)
 
-
-def play():
-    alive = True
-    while alive:
-        print("you will die "+name)
-        alive = False
-
-
-
-
-
-
-
-
-if __name__ == "__main__":
-    play()
