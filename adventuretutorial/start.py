@@ -1,10 +1,5 @@
-johannes = "mentor"
-
-#print("hello world "+johannes)
-
-#startmeny typ
+# startmeny? character creation?
 import time
-
 
 
 print('Welcome to Stefan\'s Adventure Game! It\'s a really good game.')
@@ -12,12 +7,19 @@ time.sleep(1)
 print('Please set the name, age and gender of your character.')
 time.sleep(2)
 
-name = input('First, tell me you name')
-if name != 'Stig':
-    print(name+'? What a silly name! Let us call you Stig instead. It\'s a good name.')
-    name='Stig'
-else:
-    print('Excellent choice!')
+name_tries = 0
+name = ''
+while name != 'Stig':
+    name = input('First, tell me you name')
+    if name_tries < 3:
+        if name != 'Stig':
+            print('Wat')
+            name_tries = name_tries + 1
+            time.sleep(1)
+    else:
+        time.sleep(1)
+        print('Let\'s just go with Stig, ok?')
+        name = 'Stig'
 time.sleep(1)
 
 
@@ -44,6 +46,6 @@ while gender != 'boy':
     elif gender == 'girl':
         print('C\'mon dude, does Stig sound like a girl\'s name to you?')
     else:
-        print('You sure are! Because you have a penis!')
+        print('You sure are!')
 time.sleep(1)
 
